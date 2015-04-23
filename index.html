@@ -7,9 +7,38 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+	<div class="ct-galeria">
+		
+	</div>	
 	
 	<script src="js/jquery.js"></script>
 	<script src="js/angular.min.js"></script>
 	<script src="js/main.js"></script>
+	<script>
+		$(document).ready(function(){
+			var fotos = [
+				{
+					src: "res/img/01.jpg",
+					nome: "Palmeiras",
+					descricao: "Sociedade Esportiva Palmeiras",
+				},
+				{
+					src: "res/img/02.jpg",
+					nome: "Rádio",
+					descricao: "É meu pau",
+				},
+				{
+					src: "res/img/03.jpg",
+					nome: "Chá",
+					descricao: "de minhápica",
+				}
+			];
+			galeria1 = new Galeria({
+				container: $("div.ct-galeria"),
+				data: fotos,
+			});	
+		});
+	</script>
 </body>
 </html>

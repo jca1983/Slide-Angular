@@ -1,0 +1,110 @@
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+body {
+	text-align: center;
+}
+
+.ct-galeria {
+	position: relative;
+	display: block;
+	width: 700px;
+	height: 400px;
+	margin: 50px auto;
+}
+
+.ct-galeria .wrapper {
+	float: left;
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
+
+.ct-galeria .wrapper h1 {
+	position: absolute;
+	top: 20px;
+	width: 100%;
+	height: 25px;
+	background: blue;
+	color: white;
+	text-align: left;
+	text-indent: 20px;
+	line-height: 25px;
+	font-size: 15px;
+	z-index: 2;
+}
+
+.ct-galeria  .wrapper span {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 40px;
+	background: red;
+	color: white;
+	text-align: center;
+	line-height: 40px;
+	font-size: 15px;
+	z-index: 3;
+}
+
+.ct-galeria .wrapper img {
+	float: left;
+	position: relative;
+	width: 100%;
+	z-index: 1;
+}
+
+.ct-buttons,
+.ct-slider {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+}
+
+.ct-buttons {
+	z-index: 1;
+}
+
+.ct-slider {
+	z-index: 0;
+	border: 1px solid blue;
+	overflow: hidden;
+}
+
+.ct-galeria .btn-slider {
+	position: absolute;
+	z-index: 2;
+	top: 40%;
+	width: 45px;
+	height: 45px;
+	border: 2px solid #FF11AA;
+	opacity: 0.50;
+	border-radius: 50px;
+}
+
+.ct-galeria .prev {
+	background: url(../res/img/prev.png) no-repeat center center;
+	left: 0;
+	cursor: pointer;
+}
+
+.ct-galeria .next {
+	background: url(../res/img/next.png) no-repeat center center;
+	right: 0;
+	cursor: pointer;
+}
+
+.ct-galeria .prev:hover {
+	opacity: 1;
+}
+
+.ct-galeria .next:hover {
+	opacity: 1;
+}
